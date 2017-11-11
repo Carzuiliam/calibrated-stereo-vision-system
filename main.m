@@ -54,7 +54,6 @@ end
 
 % Extract images ----------------------------------------------------------
 [lSnap, rSnap, error] = extractImages(LEFT_CAM, RGHT_CAM);
-%[lSnap, rSnap, error] = testData;
 
 if error == 1
     disp('I could not detect your webcams! Try again!');
