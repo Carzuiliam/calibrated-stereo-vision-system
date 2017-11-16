@@ -5,8 +5,8 @@ Copyright (c) 2017 Carzuilha
 This project was developed based on the following papers:
 
 1) ZHANG, Z. A flexible new technique for camera calibration. Transactions
-on Pattern Analysis and Machine Intelligence, IEEE Computer Society, Los Alamitos,
-CA, USA, v. 22, n. 11, p. 1330–1334, nov. 2000.
+on Pattern Analysis and Machine Intelligence, IEEE Computer Society, Los
+Alamitos, CA, USA, v. 22, n. 11, p. 1330–1334, nov. 2000.
 
 2) ZHANG, Z. et al. A robust technique for matching two uncalibrated images
 through the recovery of the unknown epipolar geometry. Artificial Intelligence,
