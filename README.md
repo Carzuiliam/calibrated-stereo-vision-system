@@ -14,7 +14,7 @@ Configuring the MATLAB:
 
 2) Type the command supportPackageInstaller on MATLAB console and press Enter;
 
-3) Once the Package Installer Manager was open, find these two libraries to install:
+3) Once the Package Installer Manager is open, find these two libraries to install:
 	- USB Webcam;
 	- OS Generic Video Interface;
 
