@@ -2,15 +2,11 @@
 
 Este é um **projeto em MATLAB** cujo objetivo é criar um **mapa de disparidades** a partir de uma cena real, capturada por um par de câmeras, **usando calibração** (pelo método de Zhang). O mapa de disparidades é um mapa que exibe a profundidade dos elementos presentes em uma cena. 
 
----------------------------------------------------------------------------------------------------------------------------------
-
 ## Materiais Utilizados
 
 - **MATLAB R2014b**, versão x64, disponível em https://www.mathworks.com/products/matlab.html.
 - Um **padrão de calibração**, impresso em uma superfície plana.
 - Uma **_webcam_ 3D**, e.g. Minoru3D, disponível em http://www.minoru3d.com/.
-
----------------------------------------------------------------------------------------------------------------------------------
 
 ## Como Configurar o MATLAB
 
@@ -24,8 +20,6 @@ Este é um **projeto em MATLAB** cujo objetivo é criar um **mapa de disparidade
 6) Por fim, você pode executar o script _main.m_ na IDE do MATLAB.
 
 Você provavelmente precisará de uma **conta no MATLAB** para **baixar e instalar** os pacotes necessários (é de graça).
-
----------------------------------------------------------------------------------------------------------------------------------
 
 ## Licença de Uso
 

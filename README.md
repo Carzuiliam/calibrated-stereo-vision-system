@@ -2,15 +2,11 @@
 
 This is a **MATLAB project** that objective is to create a **disparity map** from a real scene, captured by a pair of cameras, **using calibration** (by the Zhang method). The disparity map is a map which shows the deep of elements presents in a scene. 
 
----------------------------------------------------------------------------------------------------------------------------------
-
 ## Utilized Materials
 
 - **MATLAB R2014b**, x64 version, available on: https://www.mathworks.com/products/matlab.html.
 - A **calibration pattern**, printed in a plain surface.
 - A **3D Webcam**, e.g. Minoru3D, available on: http://www.minoru3d.com/.
-
----------------------------------------------------------------------------------------------------------------------------------
 
 ## Configuring MATLAB
 
@@ -25,8 +21,6 @@ This is a **MATLAB project** that objective is to create a **disparity map** fro
 
 You will probably need a **MATLAB account** to **download and install** these packages (it's free to create).
 
----------------------------------------------------------------------------------------------------------------------------------
-
-## Licença de Uso
+## Licence
 
 The available source codes here are under the MIT License (see the attached file _LICENSE_ for more details). Any questions can be submitted to my [email](carloswdecarvalho@outlook.com).
