@@ -14,7 +14,7 @@ Este é um **projeto em MATLAB** cujo objetivo é criar um **mapa de disparidade
 
 2) Digite o comando `supportPackageInstaller` no console do MATLAB e pressione Enter;
 
-3) Uma vez que o Package Installer Manager esteja aberto, marque estas duas bibliotecas para serem instaladas:
+3) Uma vez que o _Package Installer Manager_ esteja aberto, marque estas duas bibliotecas para serem instaladas:
 	- `USB Webcam`;
 	- `OS Generic Video Interface`;
 
