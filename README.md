@@ -22,7 +22,7 @@ This is a **MATLAB project** that objective is to create a **disparity map** fro
 
 5) Find the `ID` (is a number, generally 1 and 2 to left and right cameras) of each webcam tu be used and change the values of `LEFT_CAM`/`RGHT_CAM` with the `ID` of each one. If you want to do a initial calibration, change the value of `USE_ZHANG_CL` to 1;
 
-6) Finally, you can run the `main.m` script inside MATLAB IDE.
+6) Finally, you can run the `main.m` script inside the MATLAB IDE.
 
 You will probably need a **MATLAB account** to **download and install** these packages (it's free to create).
 
