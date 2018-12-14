@@ -23,4 +23,4 @@ You will probably need a **MATLAB account** to **download and install** these pa
 
 ## Licence
 
-The available source codes here are under the MIT License (see the attached file _LICENSE_ for more details). Any questions can be submitted to my [email](carloswdecarvalho@outlook.com).
+The available source codes here are under the MIT License (see the attached file _LICENSE_ for more details). Any questions can be submitted to my email: carloswdecarvalho@outlook.com.
