@@ -11,16 +11,16 @@ This is a **MATLAB project** that objective is to create a **disparity map** fro
 ## Configuring MATLAB
 
 1) Open MATLAB;
-2) Type the command _supportPackageInstaller_ on MATLAB console and press Enter;
+2) Type the command `supportPackageInstaller` on MATLAB console and press Enter;
 3) Once the Package Installer Manager is open, find these two libraries to install:
-	- _USB Webcam_;
-	- _OS Generic Video Interface_;
+	- `USB Webcam`;
+	- `OS Generic Video Interface`;
 4) Set the MATLAB path to the folder that contains the project (probably the folder with this file);
-5) Find the _ID_ (is a number, generally 1 and 2 to left and right cameras) of each webcam tu be used and change the values of _LEFT_CAM_/_RGHT_CAM_ with the _ID_ of each one. If you want to do a initial calibration, change the value of _USE_ZHANG_CL_ to 1;
-6) Finally, you can run the _main.m_ script inside MATLAB IDE.
+5) Find the `ID` (is a number, generally 1 and 2 to left and right cameras) of each webcam tu be used and change the values of `LEFT_CAM`/`RGHT_CAM` with the `ID` of each one. If you want to do a initial calibration, change the value of `USE_ZHANG_CL` to 1;
+6) Finally, you can run the `main.m` script inside MATLAB IDE.
 
 You will probably need a **MATLAB account** to **download and install** these packages (it's free to create).
 
-## Licence
+## License
 
-The available source codes here are under the MIT License (see the attached file _LICENSE_ for more details). Any questions can be submitted to my email: carloswdecarvalho@outlook.com.
+The available source codes here are under the MIT License (see the attached file `LICENSE` for more details). Any questions can be submitted to my email: carloswdecarvalho@outlook.com.
