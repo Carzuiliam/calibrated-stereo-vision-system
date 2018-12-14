@@ -11,16 +11,21 @@ Este é um **projeto em MATLAB** cujo objetivo é criar um **mapa de disparidade
 ## Como Configurar o MATLAB
 
 1) Abra o MATLAB;
-2) Digite o comando _supportPackageInstaller_ no console do MATLAB e pressione Enter;
+
+2) Digite o comando `supportPackageInstaller` no console do MATLAB e pressione Enter;
+
 3) Uma vez que o Package Installer Manager esteja aberto, marque estas duas bibliotecas para serem instaladas:
-	- _USB Webcam_;
-	- _OS Generic Video Interface_;
+	- `USB Webcam`;
+	- `OS Generic Video Interface`;
+
 4) Configure o caminho do MATLAB para a pasta que contém o projeto baixado (provavelmente a pasta deste arquivo);
-5) Encontre o _ID_ (é um número, geralmente 1 e 2 para as câmeras esquerda e direita) de cada webcam a ser utilizada e mude os valores de _LEFT_CAM_/_RGHT_CAM_ com os _ID_'s de cada uma. Se você deseja realizar uma calibração inicial, mude também o valor de _USE_ZHANG_CL_ para 1;
-6) Por fim, você pode executar o script _main.m_ na IDE do MATLAB.
+
+5) Encontre o `ID` (é um número, geralmente 1 e 2 para as câmeras esquerda e direita) de cada webcam a ser utilizada e mude os valores de `LEFT_CAM`/`RGHT_CAM` com os `ID`'s de cada uma. Se você deseja realizar uma calibração inicial, mude também o valor de `USE_ZHANG_CL` para 1;
+
+6) Por fim, você pode executar o script `main.m` na IDE do MATLAB.
 
 Você provavelmente precisará de uma **conta no MATLAB** para **baixar e instalar** os pacotes necessários (é de graça).
 
 ## Licença de Uso
 
-Os códigos disponibilizados aqui estão sob a Licença do MIT (veja o arquivo _LICENSE_ em anexo para mais detalhes). Dúvidas sobre a biblioteca podem ser enviadas para o meu [e-mail](carloswdecarvalho@outlook.com)
+Os códigos disponibilizados aqui estão sob a Licença do MIT (veja o arquivo `LICENSE` em anexo para mais detalhes). Dúvidas sobre a biblioteca podem ser enviadas para o meu e-mail: carloswdecarvalho@outlook.com.
