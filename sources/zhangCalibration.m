@@ -2,14 +2,14 @@
 %                        ZHANG METHOD CALIBRATION
 %==========================================================================
 
-function [parms, error] = zhangCalibration(NUM_FEATURES, SQRE_SIZE_MM)
+function [parameters, error] = zhangCalibration(NUM_FEATURES, SQRE_SIZE_MM)
 
 % Initilizing values ------------------------------------------------------
 lImages = cell(NUM_FEATURES, 1);
 rImages = cell(NUM_FEATURES, 1);
 
 % Load the dataset and store it in an array -------------------------------
-for i = 1:NUM_FEATURES;
+for i = 1:NUM_FEATURES
    
     try 
         lImage = sprintf('calibration/lData/%d.jpg', i);
@@ -29,10 +29,10 @@ end
 worldPoints = generateCheckerboardPoints(boardSize, SQRE_SIZE_MM);
 
 % Calibrate the stereo camera system --------------------------------------
-parms = estimateCameraParameters(imagePoints, worldPoints);
+parameters = estimateCameraParameters(imagePoints, worldPoints);
 
 % Save parameters in a file (used in non-calibrations) --------------------
-save('parms.mat', 'parms');
+save('parameters/parameters.mat', 'parameters');
 
 % Function status ---------------------------------------------------------
 error = 0;

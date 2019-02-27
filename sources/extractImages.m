@@ -1,23 +1,27 @@
 %==========================================================================
 %                             EXTRACT IMAGES
+% 
+%   This script is reponsible for snap images from a scene using the web-
+% cams.
 %==========================================================================
 
-function [lSnap, rSnap, error] = extractImages(LEFT_CAM, RGHT_CAM)
+function [lSnap, rSnap, imagesStatus] = extractImages(LEFT_CAM, RGHT_CAM)
 
-% Starting Minoru ---------------------------------------------------------
+%   Starts the webcams.
 try 
     lCam = videoinput('winvideo', LEFT_CAM);
     rCam = videoinput('winvideo', RGHT_CAM);
 catch
-    error = 1;
+    imagesStatus = 1;
     return;
 end
 
-% Generating real time frames ---------------------------------------------
+%   Gets a snapshot from a scene using the webcam.
 lSnap = getsnapshot(lCam);
 rSnap = getsnapshot(rCam);
 
-% Function status ---------------------------------------------------------
-error = 0;
+%   Finally, returns the capture status.
+imagesStatus = 0;
 
+%   Ends the script.
 end
