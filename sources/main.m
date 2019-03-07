@@ -2,7 +2,7 @@
 %                             MAIN SCRIPT
 % 
 %   This is the main script of the project. May be necessary a pair of web-
-% cams to make this script works, if you want to use calibration.
+% cams to make this script works, if you want to use the calibration step.
 %==========================================================================
 
 function main

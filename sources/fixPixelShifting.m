@@ -1,5 +1,5 @@
 %==========================================================================
-%                         FIX PIXELS SHIFTING
+%                           FIX PIXELS SHIFTING
 %
 %   This script shifts horizontally a pair of stereo images in order to
 % makes the disparity generation more smooth.

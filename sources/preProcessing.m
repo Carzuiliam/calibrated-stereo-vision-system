@@ -1,13 +1,15 @@
 %==========================================================================
 %                             PRE-PROCESSING
-%   This script does a pre-processing in the input images. actually, it
-% justs do a grayscale conversion (maybe one day I'll add more things, if
-% needed).
+%
+%   This script is responsible for the pre-processing (for now, just an
+% greyscale conversion and resizing) for each stereo image.
+%
+%   (Maybe I'll try new concepts in the future, so stay alert!)
 %==========================================================================
 
 function [lSnap, rSnap] = preProcessing(lSnap, rSnap)
 
-%   Converting to grayscale.
+%   Converts to grayscale.
 lSnap = rgb2gray(lSnap);
 rSnap = rgb2gray(rSnap);
 

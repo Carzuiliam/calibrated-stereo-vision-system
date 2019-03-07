@@ -9,7 +9,7 @@
 
 function [parameters, error] = zhangCalibration(NUM_FEATURES, SQRE_SIZE_MM)
 
-%   Initilizing values.
+%   Initilizes the needed variables.
 lImages = cell(NUM_FEATURES, 1);
 rImages = cell(NUM_FEATURES, 1);
 

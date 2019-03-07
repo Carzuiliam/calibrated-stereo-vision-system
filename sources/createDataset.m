@@ -1,7 +1,7 @@
 %==========================================================================
 %                             CREATE DATASET
 % 
-%   This scriptis responsible for creates the webcam dataset (in order to
+%   This scriptis responsible for create the webcam dataset (in order to
 % calibrate the system).
 %==========================================================================
 
