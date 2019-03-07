@@ -4,7 +4,7 @@ Este é um **projeto em MATLAB** cujo objetivo é criar um **mapa de disparidade
 
 ## Materiais Utilizados
 
-- **MATLAB R2014b**, versão x64, disponível em https://www.mathworks.com/products/matlab.html.
+- **MATLAB R2017b**, versão x64, disponível em https://www.mathworks.com/products/matlab.html.
 - Um **padrão de calibração**, impresso em uma superfície plana.
 - Uma **_webcam_ 3D**, e.g. Minoru3D, disponível em http://www.minoru3d.com/.
 

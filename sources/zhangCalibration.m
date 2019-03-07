@@ -1,14 +1,19 @@
 %==========================================================================
 %                        ZHANG METHOD CALIBRATION
+%   This script is responsible for the disparity map generation. It uses
+% the Zhang method in order to geenrate the map. Reference:
+%
+% ZHANG, Z. A Flexible New Technique for Camera Calibration. Pattern Analy-
+% sis and Machine Intelligence, v.22, p. 1330-1334, 2000.
 %==========================================================================
 
 function [parameters, error] = zhangCalibration(NUM_FEATURES, SQRE_SIZE_MM)
 
-% Initilizing values ------------------------------------------------------
+%   Initilizing values.
 lImages = cell(NUM_FEATURES, 1);
 rImages = cell(NUM_FEATURES, 1);
 
-% Load the dataset and store it in an array -------------------------------
+%   Loads the dataset and store it in an array...
 for i = 1:NUM_FEATURES
    
     try 
@@ -24,17 +29,18 @@ for i = 1:NUM_FEATURES
     
 end
 
-% Detect the checkboards and specify the world coordinates ----------------
+%   ...detects the checkboards and specify the world coordinates...
 [imagePoints, boardSize] = detectCheckerboardPoints(lImages, rImages);
 worldPoints = generateCheckerboardPoints(boardSize, SQRE_SIZE_MM);
 
-% Calibrate the stereo camera system --------------------------------------
+%   ...calibrates the stereo camera system...
 parameters = estimateCameraParameters(imagePoints, worldPoints);
 
-% Save parameters in a file (used in non-calibrations) --------------------
+%   ...and saves parameters in a file (used in non-calibrations).
 save('parameters/parameters.mat', 'parameters');
 
-% Function status ---------------------------------------------------------
+%   Finally, returns the calibration status.
 error = 0;
 
+%   Ends the script.
 end

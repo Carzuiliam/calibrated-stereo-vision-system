@@ -4,7 +4,7 @@ This is a **MATLAB project** that objective is to create a **disparity map** fro
 
 ## Utilized Materials
 
-- **MATLAB R2014b**, x64 version, available on: https://www.mathworks.com/products/matlab.html.
+- **MATLAB R2017b**, x64 version, available on: https://www.mathworks.com/products/matlab.html.
 - A **calibration pattern**, printed in a plain surface.
 - A **3D Webcam**, e.g. Minoru3D, available on: http://www.minoru3d.com/.
 

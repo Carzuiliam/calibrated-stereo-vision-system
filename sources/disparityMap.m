@@ -8,7 +8,7 @@
 %
 % HIRSCHMULLER, H., 2005. Accurate and Efficient Stereo Processing by Semi-
 % Global Matching and Mutual Information. Proc. of Int. Conference on Com-
-% puter Vision and Pattern Recognition, 2, 807-814.
+% puter Vision and Pattern Recognition, v. 2, p. 807-814, 2005.
 %==========================================================================
 
 function [dispMap, dispRng] = disparityMap(lSnap, rSnap)
