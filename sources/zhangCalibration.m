@@ -7,14 +7,14 @@
 % sis and Machine Intelligence, v.22, p. 1330-1334, 2000.
 %==========================================================================
 
-function [parameters, error] = zhangCalibration(NUM_FEATURES, SQRE_SIZE_MM)
+function [params, error] = zhangCalibration(numFeatures, squareSizeMm)
 
 %   Initilizes the needed variables.
-lImages = cell(NUM_FEATURES, 1);
-rImages = cell(NUM_FEATURES, 1);
+lImages = cell(numFeatures, 1);
+rImages = cell(numFeatures, 1);
 
-%   Loads the dataset and store it in an array...
-for i = 1:NUM_FEATURES
+%   Loads the dataset and store it in an array.
+for i = 1:numFeatures
    
     try 
         lImage = sprintf('calibration/lData/%d.jpg', i);
@@ -29,17 +29,17 @@ for i = 1:NUM_FEATURES
     
 end
 
-%   ...detects the checkboards and specify the world coordinates...
+%   Detects the checkboards and specify the world coordinates.
 [imagePoints, boardSize] = detectCheckerboardPoints(lImages, rImages);
-worldPoints = generateCheckerboardPoints(boardSize, SQRE_SIZE_MM);
+worldPoints = generateCheckerboardPoints(boardSize, squareSizeMm);
 
-%   ...calibrates the stereo camera system...
-parameters = estimateCameraParameters(imagePoints, worldPoints);
+%   Calibrates the stereo camera system.
+params = estimateCameraParameters(imagePoints, worldPoints);
 
-%   ...and saves parameters in a file (used in non-calibrations).
+%   Saves parameters in a file (used in non-calibrations).
 save('parameters/parameters.mat', 'parameters');
 
-%   Finally, returns the calibration status.
+%   Returns the calibration status.
 error = 0;
 
 %   Ends the script.

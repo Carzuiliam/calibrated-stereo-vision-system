@@ -7,12 +7,12 @@
 % the calibration parameters as a reference.
 %==========================================================================
 
-function [lSnap, rSnap] = rectifyImages(lSnap, rSnap, parms)
+function [lImage, rImage] = rectifyImages(lImage, rImage, params)
 
 %   Applies the rectification using the calibration parameters.
 pixelShift = -14;
-[lSnap, rSnap] = rectifyStereoImages(lSnap, rSnap, parms, 'OutputView', 'full');
-[lSnap, rSnap] = fixPixelShifting(lSnap, rSnap, pixelShift);
+[lImage, rImage] = rectifyStereoImages(lImage, rImage, params, 'OutputView', 'full');
+[lImage, rImage] = fixPixelShifting(lImage, rImage, pixelShift);
 
 %   Ends the script.
 end

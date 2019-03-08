@@ -6,12 +6,12 @@
 % fined by the MatLab IDE).
 %==========================================================================
 
-function [lSnap, rSnap, imagesStatus] = extractImages(LEFT_CAM, RGHT_CAM)
+function [lSnap, rSnap, imagesStatus] = extractImages(lCamera, rCamera)
 
 %   Starts the webcams.
 try 
-    lCam = videoinput('winvideo', LEFT_CAM);
-    rCam = videoinput('winvideo', RGHT_CAM);
+    lCam = videoinput('winvideo', lCamera);
+    rCam = videoinput('winvideo', rCamera);
 catch
     imagesStatus = 1;
     return;

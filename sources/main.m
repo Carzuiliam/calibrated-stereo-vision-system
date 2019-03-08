@@ -84,7 +84,7 @@ end
 %   ...and displays it.
 figure; 
 imshow(dispMap, dispRang); 
-title('Disparity Mapfor the Scene');
+title('Disparity Map for the Scene');
 
 %   Displays a success message.
 disp('The disparity map were generated successfully.');

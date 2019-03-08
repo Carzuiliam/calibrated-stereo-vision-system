@@ -5,12 +5,12 @@
 % calibrate the system).
 %==========================================================================
 
-function datasetStatus = createDataset(LEFT_CAM, RHGT_CAM, NUM_FEATURES)
+function datasetStatus = createDataset(lCamera, rCamera, numFeatures)
 
-%   First, setups the webcams...
+%   Setups the webcams.
 try    
-    lCam = videoinput('winvideo', LEFT_CAM);
-    rCam = videoinput('winvideo', RHGT_CAM);
+    lCam = videoinput('winvideo', lCamera);
+    rCam = videoinput('winvideo', rCamera);
 catch    
     datasetStatus = 1;
     return;
@@ -22,8 +22,8 @@ inputStream = strcat( ...
 );
 waitfor(msgbox(inputStream));
 
-%   Then, extracts a set of checkboard images using the webcams.
-for i = 1:NUM_FEATURES
+%   Extracts a set of checkboard images using the webcams.
+for i = 1:numFeatures
     
     lSnap = getsnapshot(lCam);
     rSnap = getsnapshot(rCam);
@@ -34,7 +34,7 @@ for i = 1:NUM_FEATURES
     imwrite(lSnap, imageL, 'jpg');
     imwrite(rSnap, imageR, 'jpg');
 
-    if i ~= NUM_FEATURES        
+    if i ~= numFeatures        
         inputStream = strcat( ...
             'Got the feature number', i ,'. Please, change the ', ...
             'checkboard position and press OK when you are ready.' ...
@@ -44,7 +44,7 @@ for i = 1:NUM_FEATURES
     
 end
 
-%   Finally, returns the calibration status.
+%   Returns the calibration status.
 datasetStatus = 0;
 
 %   Ends the script.

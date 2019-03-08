@@ -7,11 +7,11 @@
 %   (Maybe I'll try new concepts in the future, so stay alert!)
 %==========================================================================
 
-function [lSnap, rSnap] = preProcessing(lSnap, rSnap)
+function [lImage, rImage] = preProcessing(lImage, rImage)
 
 %   Converts to grayscale.
-lSnap = rgb2gray(lSnap);
-rSnap = rgb2gray(rSnap);
+lImage = rgb2gray(lImage);
+rImage = rgb2gray(rImage);
 
 %   Ends the script.
 end
