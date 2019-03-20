@@ -28,4 +28,4 @@ Você provavelmente precisará de uma **conta no MATLAB** para **baixar e instal
 
 ## Licença de Uso
 
-Os códigos disponibilizados aqui estão sob a Licença do MIT (veja o arquivo `LICENSE` em anexo para mais detalhes). Dúvidas sobre a biblioteca podem ser enviadas para o meu e-mail: carloswdecarvalho@outlook.com.
+Os códigos disponibilizados aqui estão sob a licença do MIT, versão 3.0 (veja o arquivo `LICENSE` em anexo para mais detalhes). Dúvidas sobre a biblioteca podem ser enviadas para o meu e-mail: carloswdecarvalho@outlook.com.
