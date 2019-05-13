@@ -10,7 +10,7 @@ A **disparity map** is a graphic representation of the depth of elements inside 
  - The **rectification**, which uses the obtained parameters of the earlier step as a reference for the capture process (and later adjust) of the images from a scene;
  - The **correspondence**, which uses the result images from the rectification process to generate the disparity map.
 
-Though there is a lot of techniques for rectification and correspondence, usually the calibration is performed by the traditional Zhang method [[1](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr98-71.pdf)], which uses an element (resembling a chessboard) as reference for the calibration of the stereo vision system's cameras. That's what this project does.
+Though there is a lot of techniques for rectification and correspondence, usually the calibration is performed by the traditional Zhang method [1], which uses an element (resembling a chessboard) as reference for the calibration of the stereo vision system's cameras. That's what this project does.
 
 ## Utilized Material
 
@@ -46,3 +46,7 @@ You may need a MATLAB account (don't worry, it's free) to download and install t
 ## License
 
 The available source codes here are under the MIT License, version 3.0 (see the attached `LICENSE` file for more details). Any questions can be submitted to my email: carloswdecarvalho@outlook.com.
+
+## References
+
+[1]	Zhang, Z. "A Flexible New Technique for Camera Calibration". IEEE Transactions on Pattern Analysis and Machine Intelligence. Vol. 22, No. 11, 2000, pp. 1330–1334.

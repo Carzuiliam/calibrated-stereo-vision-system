@@ -10,7 +10,7 @@ Um **mapa de disparidades** é uma representação gráfica da profundidade de e
  - A **retificação**, em que os parâmetros obtidos na etapa anterior são utilizados como referência no processo de captura (e posteriormente ajuste) das imagens de uma cena;
  - A **correspondência**, que parte das imagens obtidas pelo processo de retificação para gerar o mapa de disparidades.
 
-Embora existam muitas técnicas para retificação e correspondência, na maioria das vezes a calibração é realizada utilizando o tradicional método de Zhang [[1](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr98-71.pdf)], que utiliza um elemento (semelhante a um tabuleiro de xadrez) como referência para a calibração das câmeras do sistema de visão estéreo. É o que este projeto faz.
+Embora existam muitas técnicas para retificação e correspondência, na maioria das vezes a calibração é realizada utilizando o tradicional método de Zhang [1], que utiliza um elemento (semelhante a um tabuleiro de xadrez) como referência para a calibração das câmeras do sistema de visão estéreo. É o que este projeto faz.
 
 ## Materiais Utilizados
 
@@ -46,3 +46,7 @@ Você pode precisar de uma conta no MATLAB (não se preocupe, esta é gratuita) 
 ## Licença de Uso
 
 Os códigos disponibilizados aqui estão sob a licença do MIT, versão 3.0 (veja o arquivo `LICENSE` em anexo para mais detalhes). Dúvidas sobre este projeto podem ser enviadas para o meu e-mail: carloswdecarvalho@outlook.com.
+
+## Referências
+
+[1]	Zhang, Z. "A Flexible New Technique for Camera Calibration". IEEE Transactions on Pattern Analysis and Machine Intelligence. Vol. 22, No. 11, 2000, pp. 1330–1334.
